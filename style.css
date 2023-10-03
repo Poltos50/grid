@@ -1,0 +1,63 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+.body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:   cornflowerblue;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr) repeat(2, 2fr) 3fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-gap: 10px;
+    width: 80vw;
+    height: 80vh;
+}
+
+.div {
+    padding: 10px;
+    border-radius: 25px;
+}
+.div1 { 
+    grid-area: 1 / 1 / 2 / 4; 
+    background-color: antiquewhite;
+}
+.div2 { 
+    grid-area: 1 / 4 / 2 / 6; 
+    background-color:aquamarine;
+}
+.div3 { 
+    grid-area: 2 / 1 / 4 / 3; 
+    background-color: aliceblue;
+}
+.div4 { 
+    grid-area: 2 / 3 / 3 / 5; 
+    background-color: silver;
+}
+.div5 { 
+    grid-area: 3 / 3 / 4 / 5; 
+    background-color: wheat;
+}
+.div6 { 
+    grid-area: 2 / 5 / 3 / 6; 
+    background-color: hotpink;
+}
+.div7 { 
+    grid-area: 3 / 5 / 4 / 6; 
+    background-color: tan;
+}
+.div8 { 
+    grid-area: 4 / 1 / 5 / 2; 
+    background-color: yellowgreen;
+}
+.div9 { 
+    grid-area: 4 / 2 / 5 / 6; 
+    background-color: honeydew;
+}
